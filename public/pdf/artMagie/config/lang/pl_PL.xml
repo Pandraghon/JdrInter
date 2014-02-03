@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data locale="pl_PL">
+	<loadingData>Trwa pobieranie danych</loadingData>
+	<toolbar>
+		<fullscreenIn>Powiększ na pełny ekran</fullscreenIn>
+		<fullscreenOut>Wyjdź z podglądu pełnoekranowego</fullscreenOut>
+		<zoomIn>Powiększ</zoomIn>
+		<zoomOut>Pomniejsz</zoomOut>
+		<pageIndex>Wszystkie strony</pageIndex>
+		<prevPage>Poprzednia strona</prevPage>
+		<nextPage>Następna strona</nextPage>
+		<firstPage>Pierwsza strona</firstPage>
+		<lastPage>Ostatnia strona</lastPage>
+		<soundOn>Włącz dźwięk</soundOn>
+		<soundOff>Wyłącz dźwięk</soundOff>
+		<print>Drukuj</print>
+	</toolbar>
+	<error>
+		<default>Niestety wystąpił błąd</default>
+		<wrongPublication>Wystąpił błąd podczas wgrywania publikacji</wrongPublication>
+	</error>
+</data>

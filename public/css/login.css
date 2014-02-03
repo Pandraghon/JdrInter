@@ -1,0 +1,195 @@
+#charcreate {
+	margin-top: 4px;
+	width: 1305px;
+	margin: auto;
+}
+.char_page {
+	width: 650px;
+}
+
+#dicetotal {
+	width: 30px;
+	text-align: center;
+}
+.dice {color: black;}
+.dicemin {color: grey;}
+
+#charcreate .tablesheet {
+	display: table;
+	width: 100%;
+}
+#charcreate .cellsheet {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#charcreate textarea {
+	resize: none;
+	font-size: 1.2em;
+}
+
+#charcreate .field {
+	display: inline-block;
+	font-size: 0;
+	margin-right: 8px;
+	margin-bottom: 2px;
+}
+#charcreate .namefield {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 11px;
+	border: 1px solid grey;
+	border-bottom: none;
+	border-radius: 0 20px 0 0 / 0 15px 0 0;
+	background: rgba(175, 175, 175, .5);
+	font-size: 11px;
+}
+#charcreate .field input, #charcreate .field select {
+	margin: 0;
+	width: 100%;
+	height: 18px;
+	border: none;
+	background: rgba(255, 255, 255, .6);
+	border: 1px solid grey;
+	border-top: none;
+	font-size: 13px;
+	padding: 0;
+}
+#charcreate fieldset {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-before: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+	-webkit-padding-after: 0;
+}
+#charcreate table {width: 100%;}
+#charcreate table th {
+	font-weight: normal;
+	font-size: .7em;
+}
+#charcreate table td.rowname {
+	font-size: .8em;
+	font-weight: bold;
+	text-align: left;
+}
+#charcreate table td.little {
+	font-size: .7em;
+	font-weight: normal;
+}
+#charcreate table input {
+	width: 22px;
+	height: 15px;
+	text-align: center;
+}
+#charcreate table .connaiss .rowname {
+	padding-left: 20px;
+	font-size: .75em;
+	font-weight: normal;
+}
+#connaissances {
+	position: relative;
+	top: 230px;
+	left: -98px;
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+}
+
+#charcreate table input.arme_nom {width: 140px;text-align: left;}
+#charcreate table input.arme_type {width: 22px;text-align: left;}
+#charcreate table input.arme_portee {width: 50px;text-align: left;}
+#charcreate table input.arme_toucher {width: 75px;text-align: left;}
+#charcreate table input.arme_degats {width: 130px;text-align: left;}
+
+#charcreate .one_arme {
+	width: 455px;
+}
+#charcreate .arme_infos, #charcreate .arme_select {
+	border-radius: 10px / 5px;
+	background: rgba(225, 225, 225, .65);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(130, 130, 130, 0.7);
+}
+#charcreate .arme_infos {
+	display: inline-block;
+	width: 420px;
+	height: 23px;
+}
+#charcreate .arme_select {
+	display: inline-block;
+	width: 25px;
+	height: 23px;
+	content: "...";
+	cursor: pointer;
+}
+#charcreate .arme_choice {
+	display: none;
+	position: absolute;
+	height: 250px;
+	width: 641px;
+	margin-top: 23px;
+	margin-left: -545px;
+	text-align: right;
+	overflow-y: auto; 
+	border: 1px solid grey;
+	border-radius: 4px;
+	background: rgba(240, 240, 240, .8);
+	z-index: 333;
+}
+#charcreate .arme_one_choice {
+	width: 100%;
+	border-bottom: 1px solid grey;
+}
+#charcreate .arme_one_choice:hover {
+	background: rgba(200, 200, 200, .5);
+}
+#charcreate .arme_one_choice span {
+	display: inline-block;
+	padding: 0 5px;
+	text-align: left;
+	box-sizing: border-box;
+}
+#charcreate .arme_one_choice span:last-child {
+	border: none;
+}
+#charcreate .arme_nom {width:180px;}
+#charcreate .arme_prix {width:43px;}
+#charcreate .arme_degats_p,
+#charcreate .arme_degats_m {width:43px;}
+#charcreate .arme_critique {width:69px;}
+#charcreate .arme_fact_portee {width:27px;}
+#charcreate .arme_poids {width:45px;}
+#charcreate .arme_type {width:54px;}
+#charcreate .arme_special {width:120px;}
+
+#charcreate table input.armure_nom {width: 126px;text-align: left;}
+
+.groupname {
+	font-weight: bold;
+}
+
+#comp_martiales label, #langues label {
+	display: block;
+	text-align: left;
+}
+
+#races {width: 285px;}
+#caract {width: 202px;}
+#classes, #competences {width: 430px;} 
+#comp_martiales, #langues {
+	width: 145px;
+	font-size: .8em;
+}
+#background {width: 600px;}
+#agechar {width: 30px;}
+#weightchar {width: 40px;}
+#sizechar {width: 50px;}
+#eyeschar {width: 65px;}
+#hairchar {width: 70px;}
+#skinchar {width: 55px;}

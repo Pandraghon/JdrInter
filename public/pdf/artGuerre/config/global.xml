@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="1.3">
+  <toolbar hide="false">
+    <fullscreen>true</fullscreen>
+    <zoom>true</zoom>
+    <index>true</index>
+    <sound>false</sound>
+    <preview>true</preview>
+    <print>true</print>
+    <save>true</save>
+    <slider>true</slider>
+  </toolbar>
+  <sounds>
+    <usesounds>true</usesounds>
+    <path>content/snd/</path>
+    <sound type="drag">drag.mp3</sound>
+    <sound type="restore">restore.mp3</sound>
+    <sound type="turn">turn.mp3</sound>
+  </sounds>
+  <logo>
+    <path>content/logo.png</path>
+    <url>www.pressmo.pl</url>
+    <show>true</show>
+  </logo>
+  <language>
+    <locale>en_EN</locale>
+    <path>config/lang/</path>
+  </language>
+  <gui>
+    <skinpath>content/skin/skin_1.swf</skinpath>
+    <help>false</help>
+    <showtooltips>true</showtooltips>
+    <bgcolor>0xFFFFFF</bgcolor>
+    <bgimage>
+      <scale>1.0</scale>
+      <path>content/bg/background.jpg</path>
+    </bgimage>
+    <innershadow>true</innershadow>
+    <useLinks>true</useLinks>
+    <zoomType>1</zoomType>
+    <zoomMoveType>0</zoomMoveType>
+  </gui>
+  <size>
+    <pagewidth>629.2960205078125</pagewidth>
+    <pageheight>802.2050170898438</pageheight>
+  </size>
+  <ebook>
+    <path>content/</path>
+    <startpage>1</startpage>
+    <dragSpeed>7</dragSpeed>
+    <pageNumberShift>0</pageNumberShift>
+  </ebook>
+  <html>
+    <title>Title of your page</title>
+  </html>
+  <password>F6A9105570A31710010A0A7D17793EEC</password>
+  <showpagenumbers>true</showpagenumbers>
+  <bgvisible>true</bgvisible>
+</data>

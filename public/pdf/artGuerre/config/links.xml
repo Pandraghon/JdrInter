@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<links version="1.1">
+  <outline>
+    <link type="3" url="Couverture&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    <link type="3" url="Crédits&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    <link type="3" url="Introduction&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    <link type="3" url="Classes" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Introduction" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Ninja" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Pistolier" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Samouraï" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Les archétypes de classe" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Alchimiste" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Barbare" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Barde" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Chevalier" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Druide" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Guerrier" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Inquisiteur" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Magicien" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Magus" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Moine" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Paladin" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Pistolier" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Prêtre" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Rôdeur" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Roublard" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Dons" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Table 2-1 : Les dons&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Description des dons&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Maîtriser le combat" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Introduction" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Armures et armes orientales" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Armes à feu" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Armes de gladiateur" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Armes et armures primitives" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Duels" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Combat de spectacle" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Engins de siège" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Véhicules" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Véhicules" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Profils des véhicules&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Règles alternatives" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Introduction" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="L’Armure comme RD" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Frappes ciblées" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Pièces d’armure" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Blessures et vitalité" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Sorts" target="_self" x="0" y="0" w="0" h="0">
+      <children type="3" url="Liste de sorts&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+      <children type="3" url="Description des sorts" target="_self" x="0" y="0" w="0" h="0"/>
+    </link>
+    <link type="3" url="Appendices&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    <link type="3" url="Index&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+    <link type="3" url="4e de couverture&#xd;" target="_self" x="0" y="0" w="0" h="0"/>
+  </outline>
+  <page num="0">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="1310" y="12" w="-222" h="-7"/>
+  </page>
+  <page num="1">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="2">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+    <link type="0" url="http://www.black-book-editions.fr" title="w" target="_blank" x="389" y="602" w="98" h="12"/>
+  </page>
+  <page num="3">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="4">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="5">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="6">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="7">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="8">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="9">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="10">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="11">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="12">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="13">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="14">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="15">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="16">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="17">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="18">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="19">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="20">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="21">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="22">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="23">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="24">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="25">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="26">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="27">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="28">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="29">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="30">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="31">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="32">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="33">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="34">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="35">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="36">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="37">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="38">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="39">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="40">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="41">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="42">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="43">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="44">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="45">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="46">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="47">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="48">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="49">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="50">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="51">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="52">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="53">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="54">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="55">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="56">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="57">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="58">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="59">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="60">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="61">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="62">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="63">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="64">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="65">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="66">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="67">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="68">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="69">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="70">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="71">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="72">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="73">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="74">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="75">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="76">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="77">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="78">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="79">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="80">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="81">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="82">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="83">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="84">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="85">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="86">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="87">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="88">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="89">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="90">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="91">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="92">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="93">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="94">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="95">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="96">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="97">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="98">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="99">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="100">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="101">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="102">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="103">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="104">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="105">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="106">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="107">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="108">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="109">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="110">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="111">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="112">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="113">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="114">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="115">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="116">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="117">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="118">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="119">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="120">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="121">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="122">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="123">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="124">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="125">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="126">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="127">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="128">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="129">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="130">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="131">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="132">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="133">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="134">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="135">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="136">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="137">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="138">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="139">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="140">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="141">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="142">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="143">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="144">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="145">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="146">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="147">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="148">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="149">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="150">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="151">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="152">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="153">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="154">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="155">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="156">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="157">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="158">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="159">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="160">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="161">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="162">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="163">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="164">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="165">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="166">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="167">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="168">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="169">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="170">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="171">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="172">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="173">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="174">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="175">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="176">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="177">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="178">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="179">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="180">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="181">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="182">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="183">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="184">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="185">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="186">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="187">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="188">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="189">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="190">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="191">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="192">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="193">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="194">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="195">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="196">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="197">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="198">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="199">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="200">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="201">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="202">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="203">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="204">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="205">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="206">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="207">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="208">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="209">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="210">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="211">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="212">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="213">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="214">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="215">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="216">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="217">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="218">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="219">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="220">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="221">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="222">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="223">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="224">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="225">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="226">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="227">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="228">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="229">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="230">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="231">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="232">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="233">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="234">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="235">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="236">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="237">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="238">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="239">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="240">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="241">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="242">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="243">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="244">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="245">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="246">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="247">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="248">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="249">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="250">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="251">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="252">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="253">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="254">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="255">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-233" h="-7"/>
+  </page>
+  <page num="256">
+    <link type="1" url="http://www.black-book-editions.fr/" title="" target="_blank" x="624" y="12" w="-222" h="-7"/>
+  </page>
+</links>

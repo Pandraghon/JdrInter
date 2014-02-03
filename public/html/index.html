@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sapiens Pandragon">
+        <meta name="keywords" content="jdr, pathfinder">
+        <meta name="description" content="Interface pour JdR">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/ico" href="/images/icon.ico" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/connection.css" />
+        <link rel="stylesheet" href="css/charsheet.css" />
+        <title>JdR - Pathfinder</title>
+    </head>
+    <body>
+        <header class="main">
+            <h1>Interface pour JdR<div id="d20"></div></h1>
+        </header>
+
+        <div id="map"></div>
+        
+		<section>
+            <div id="pencil"></div>
+
+            <div id="infos">
+                <article id="chat">
+                    <h2>Chat</h2><br />
+                    <form method="post" action="" id="formulaire_chat">
+                        <select id="font">
+                            <option value="1">Font1</option>
+                            <option value="2">Font2</option>
+                            <option value="3">Font3</option>
+                            <option value="4">Font4</option>
+                            <option value="5">Font5</option>
+                        </select>
+                        <input type="text" name="message" id="message" placeholder="Votre message..." />
+                    </form>
+                    <div id="zone_chat">
+                        <!--<div id="content_chat"></div>-->
+                    </div>
+                </article>
+                <article id="users">
+                    <h2>Utilisateurs</h2><br />
+                </article>
+            </div>
+
+            <article id="map_load">
+                <h2>Chargement</h2><br />
+                <div class="content">
+                    <form method="post" action="">
+                        <label for="size_block">Taille des cases : </label><input type="text" id="size_block" name="size_block" /><br />
+                        <label for="width_map">Nb de case (largeur) : </label><input type="text" id="width_map" name="width_map" /><br />
+                        <label for="height_map">Nb de case (hauteur) : </label><input type="text" id="height_map" name="height_map" /><br />
+                    </form>
+                </div>
+            </article>
+
+            <article id="acces">
+                <h2>Acces rapide</h2> 
+                <ul class="a_first">
+                    <li class="a_second">
+                        <div class="content">
+                            <span class="pdflink" id="18">Races</span>
+                            <ul>
+                                <li class="pdflink" id="21">Demi-elfe</li>
+                                <li class="pdflink" id="22">Demi-orque</li>
+                                <li class="pdflink" id="23">Elfe</li>
+                                <li class="pdflink" id="24">Halfelin</li>
+                                <li class="pdflink" id="25">Gnome</li>
+                                <li class="pdflink" id="26">Humain</li>
+                                <li class="pdflink" id="27">Nain</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="a_second">
+                        <div class="content">
+                            <span class="pdflink" id="28">Classes</span>
+                            <ul>
+                                <li class="pdflink" id="31">Barbare</li>
+                                <li class="pdflink" id="34">Barde</li>
+                                <li class="pdflink" id="38">Druide</li>
+                                <li class="pdflink" id="44">Ensorceleur</li>
+                                <li class="pdflink" id="52">Guerrier</li>
+                                <li class="pdflink" id="54">Magicien</li>
+                                <li class="pdflink" id="60">Moine</li>
+                                <li class="pdflink" id="64">Paladin</li>
+                                <li class="pdflink" id="67">Prêtre</li>
+                                <li class="pdflink" id="77">Rôdeur</li>
+                                <li class="pdflink" id="81">Roublard</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="a_second">
+                        <div class="content">
+                            <span class="pdflink" id="3">Divers</span>
+                            <ul>
+                                <li class="pdflink" id="84">Compétences</li>
+                                <li class="pdflink" id="110">Dons</li>
+                                <li class="pdflink" id="138">Equipement</li>
+                                <li class="pdflink" id="164">Règles</li>
+                                <li class="pdflink" id="176">Combat</li>
+                                <li class="pdflink" id="204">Magie</li>
+                                <li class="pdflink" id="222">Sort</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <input type="submit" id="display_pdf" value="Afficher les manuels" />
+            <div id="pdflist">
+                <img src="/pdf/manuelJoueurs/cover.jpg" class="pdfone" id="manuelJoueurs" />
+                <img src="/pdf/artGuerre/cover.jpg" class="pdfone" id="artGuerre" />
+                <img src="/pdf/artMagie/cover.jpg" class="pdfone" id="artMagie" />
+                <img src="/pdf/reglesAvancees/cover.jpg" class="pdfone" id="reglesAvancees" />
+            </div>
+        </section>
+        
+        <div id="pdfcontainer">
+            <!-- Your ebook will be displayed here. In case user hasn't got actual version of Adobe Flash Player, the below description
+            will appear.
+            -->
+            Hello, you either have JavaScript turned off or an old version of Adobe’s Flash Player.
+            <a href="http://www.macromedia.com/go/getflash/">Get Flash/</a> 
+        </div>  
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/swfobject.js"></script>
+        <script src="/js/swfaddress.js"></script>
+        <script src="/js/swfmacmousewheel.js"></script>
+        <script src="/js/client.js"></script>
+    </body>
+</html>

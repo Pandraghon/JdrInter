@@ -1,0 +1,4 @@
+JdrInter
+========
+
+Interface pour JdR

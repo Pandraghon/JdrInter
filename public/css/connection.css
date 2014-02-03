@@ -1,0 +1,39 @@
+#connection, #choice {
+	display: block;
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#cotable {
+	display: table;
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -300px;
+	border-spacing: 30px;
+}
+.cocell {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#login, #charchoice {
+	-webkit-transform: rotate(-2deg);
+	   -moz-transform: rotate(-2deg);
+	    -ms-transform: rotate(-2deg);
+	     -o-transform: rotate(-2deg);
+}
+
+#signup, #gamechoice {
+	-webkit-transform: rotate(2deg);
+	   -moz-transform: rotate(2deg);
+	    -ms-transform: rotate(2deg);
+	     -o-transform: rotate(2deg);
+}

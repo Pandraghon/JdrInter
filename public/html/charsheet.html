@@ -1,0 +1,419 @@
+<div id="charcreate">
+    <form method="post" action="" id="charsheet" class="content">
+        <legend>Nouveau personnage</legend>
+        <div class="tablesheet">
+            <div class="cellsheet">
+                <span style="font-size:1em;">{AVATAR}</span>
+            </div>
+            <div class="cellsheet">
+                <div>
+                    <div class="field" id="namechar">
+                        <span class="namefield">Nom du personnage</span>
+                        <input type="text" maxlength="20" />
+                    </div>
+                    <div class="field" id="genderchar">
+                        <span class="namefield">Sexe</span>
+                        <select>
+                            <option value="h">H</option>
+                            <option value="f">F</option>
+                        </select>
+                    </div>
+                    <div class="field" id="racechar">
+                        <span class="namefield">Race</span>
+                        <select>
+                            <option value="demi_elfe">Demi-elfe</option>
+                            <option value="demi_orque">Demi-orque</option>
+                            <option value="elfe">Elfe</option>
+                            <option value="halfelin">Halfelin</option>
+                            <option value="gnome">Gnome</option>
+                            <option value="humain">Humain</option>
+                            <option value="nain">Nain</option>
+                        </select>
+                    </div>
+                    <div class="field" id="classchar">
+                        <span class="namefield">Classe</span>
+                        <select>
+                            <option value="barbare">Barbare</option>
+                            <option value="barde">Barde</option>
+                            <option value="druide">Druide</option>
+                            <option value="ensorceleur">Ensorceleur</option>
+                            <option value="guerrier">Guerrier</option>
+                            <option value="magicien">Magicien</option>
+                            <option value="moine">Moine</option>
+                            <option value="paladin">Paladin</option>
+                            <option value="pretre">Prêtre</option>
+                            <option value="rodeur">Rôdeur</option>
+                            <option value="roublard">Roublard</option>
+                        </select>
+                    </div>
+                    <div class="field" id="alignchar">
+                        <span class="namefield">Align</span>
+                        <select>
+                            <option value="lb">L-B</option>
+                            <option value="ln">L-N</option>
+                            <option value="lm">L-M</option>
+                            <option value="nb">N-B</option>
+                            <option value="n">N</option>
+                            <option value="nm">N-M</option>
+                            <option value="cb">C-B</option>
+                            <option value="cn">C-N</option>
+                            <option value="cm">C-M</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="field" id="levelchar">
+                        <span class="namefield">Niveau</span>
+                        <input type="number" maxlength="2" />
+                    </div>
+                    <div class="field" id="agechar">
+                        <span class="namefield">Age</span>
+                        <input type="text" maxlength="3" />
+                    </div>
+                    <div class="field" id="weightchar">
+                        <span class="namefield">Poids</span>
+                        <input type="text" maxlength="4" />
+                    </div>
+                    <div class="field" id="sizechar">
+                        <span class="namefield">Taille(cm)</span>
+                        <input type="text" maxlength="4" />
+                    </div>
+                    <div class="field" id="categ_sizechar">
+                        <span class="namefield">Categ</span>
+                        <input type="text" maxlength="3" disabled="true" />
+                    </div>
+                    <div class="field" id="eyeschar">
+                        <span class="namefield">Yeux</span>
+                        <input type="text" maxlength="10" />
+                    </div>
+                    <div class="field" id="hairchar">
+                        <span class="namefield">Cheveux</span>
+                        <input type="text" maxlength="10" />
+                    </div>
+                    <div class="field" id="skinchar">
+                        <span class="namefield">Peau</span>
+                        <input type="text" maxlength="10" />
+                    </div>
+                </div>
+                <div>
+                    <div class="field" id="relchar">
+                        <span class="namefield">Religion</span>
+                        <input type="text" maxlength="20" />
+                    </div>
+                    <div class="field" id="nationchar">
+                        <span class="namefield">Nation</span>
+                        <input type="text" maxlength="20" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <fieldset id="f_caractchar">
+            <legend>Caract</legend>
+            <table id="caractchar">
+                <tr>
+                    <th></th>
+                    <th>Val</th>
+                    <th>Mod</th>
+                    <th>Base</th>
+                    <th>Intr</th>
+                    <th>Alter</th>
+                </tr>
+                <tr>
+                    <td class="rowname">FOR</td>
+                    <td><input type="text" id="for_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="for_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="for" id="for_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="for" id="for_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="for" id="for_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <td class="rowname">DEX</td>
+                    <td><input type="text" id="dex_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="dex_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="dex" id="dex_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="dex" id="dex_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="dex" id="dex_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <td class="rowname">CON</td>
+                    <td><input type="text" id="con_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="con_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="con" id="con_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="con" id="con_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="con" id="con_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <td class="rowname">INT</td>
+                    <td><input type="text" id="int_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="int_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="int" id="int_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="int" id="int_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="int" id="int_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <td class="rowname">SAG</td>
+                    <td><input type="text" id="sag_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="sag_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="sag" id="sag_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="sag" id="sag_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="sag" id="sag_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <td class="rowname">CHA</td>
+                    <td><input type="text" id="cha_val" pattern="[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="cha_mod" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="cha" id="cha_base" pattern="[0-9]*" /></td>
+                    <td><input type="text" class="cha" id="cha_intr" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="cha" id="cha_alter" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="f_resistchar">
+            <legend>Résist</legend>
+            <table id="savechar">
+                <tr>
+                    <th></th>
+                    <th>Total</th>
+                    <th>Base</th>
+                    <th>Carac</th>
+                    <th>Magie</th>
+                    <th>Divers</th>
+                </tr>
+                <tr id="refl">
+                    <td class="rowname">Réflexe</td>
+                    <td><input type="text" class="total" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="base" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="magie" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="divers" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr id="vig">
+                    <td class="rowname">Vigueur</td>
+                    <td><input type="text" class="total" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="base" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="carac mod_con" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="magie" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="divers" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr id="vol">
+                    <td class="rowname">Volonté</td>
+                    <td><input type="text" class="total" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="base" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="carac mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="magie" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" class="divers" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>
+            <textarea rows="2"></textarea>
+            <table id="resistchar">
+                <tr>
+                    <th></th>
+                    <th>Acide</th>
+                    <th>Feu</th>
+                    <th>Foudre</th>
+                    <th>Froid</th>
+                    <th>Son</th>
+                    <th>RM</th>
+                </tr>
+                <tr id="resist">
+                    <td class="rowname">Résist</td>
+                    <td><input type="text" id="acide" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="feu" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="foudre" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="froid" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="son" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="rm" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="f_hpchar">
+            <legend>Pts de vie</legend>
+            <table class="hpchar">
+                <tr>
+                    <th>Max</th>
+                    <th>Régén</th>
+                </tr>
+                <tr class="hp">
+                    <td><input type="text" id="max" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="regen" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+                <tr>
+                    <th>Guéris</th>
+                    <th>RD</th>
+                </tr>
+                <tr class="hp">
+                    <td><input type="text" id="gueris" pattern="[\+]?[0-9]*" /></td>
+                    <td><input type="text" id="rd" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>
+            <textarea rows="2"></textarea>
+            <table class="hpchar">
+                <tr>
+                    <th>Dégats non-létaux</th>
+                </tr>
+                <tr class="hp">
+                    <td><input type="text" id="dgt-nl" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>         
+        </fieldset>
+        <fieldset id="f_combat">
+            <legend>Valeurs de combat</legend>
+            <div class="tablesheet">
+                <div class="cellsheet">
+                    <table class="combat">
+                        <tr>
+                            <th></th>
+                            <th>Bonus d'attaque</th>
+                            <th>BBA</th>
+                            <th>Carac</th>
+                            <th>Taille</th>
+                            <th>Spc</th>
+                        </tr>
+                        <tr id="cac">
+                            <td class="rowname">CàC</td>
+                            <td><input type="text" class="bonus" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="bba" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="carac mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="taille" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="spc" pattern="[\+]?[0-9]*" /></td>
+                        </tr>
+                        <tr id="dist">
+                            <td class="rowname">Dist</td>
+                            <td><input type="text" class="bonus" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="bba" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="taille" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="spc" pattern="[\+]?[0-9]*" /></td>
+                        </tr>
+                        <tr id="bmo">
+                            <td class="rowname">BMO</td>
+                            <td><input type="text" class="bonus" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="bba" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="carac mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="inverse_taille" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="spc" pattern="[\+]?[0-9]*" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cellsheet">
+                    <textarea rows="5"></textarea>
+                </div>
+            </div>
+            <div class="tablesheet">
+                <div class="cellsheet">
+                    <div class="tablesheet">
+                        <div class="cellsheet">
+                            <table class="combat">
+                                <tr>
+                                    <td class="rowname">CA</td>
+                                    <td><input type="text" id="ca" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowname little">Contact</td>
+                                    <td><input type="text" id="contact" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowname little">Surpris</td>
+                                    <td><input type="text" id="surpris" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowname little">Intang</td>
+                                    <td><input type="text" id="intang" pattern="[\+]?[0-9]*" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cellsheet">
+                            <table style="border-spacing: 0;border-collapse: collapse;">
+                                <tr>
+                                    <th>Armure</th>
+                                    <th>Dex</th>
+                                    <th>Taille</th>
+                                    <th>Circons</th>
+                                    <th>Saint</th>
+                                </tr>
+                                <tr class="combat_armure">
+                                    <td><input type="text" id="armure" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" class="carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                    <td><input type="text" class="taille" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                    <td><input type="text" id="circons" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="saint" pattern="[\+]?[0-9]*" /></td>
+                                </tr>
+                                <tr>
+                                    <th>Bouclier</th>
+                                    <th>Esquive</th>
+                                    <th>Parade</th>
+                                    <th>Malfais</th>
+                                    <th>Sag</th>
+                                </tr>
+                                <tr class="combat_armure">
+                                    <td><input type="text" id="bouclier" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="esquive" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="parade" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="malfais" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="armure_sag" pattern="[\+]?[0-9]*" /></td>
+                                </tr>
+                                <tr>
+                                    <th>Natur</th>
+                                    <th>Chance</th>
+                                    <th>Moral</th>
+                                    <th>Intuit</th>
+                                    <th></th>
+                                </tr>
+                                <tr class="combat_armure">
+                                    <td><input type="text" id="natur" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="chance" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="moral" pattern="[\+]?[0-9]*" /></td>
+                                    <td><input type="text" id="intuit" pattern="[\+]?[0-9]*" /></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>BBA</th>
+                            <th>For</th>
+                            <th>Dex</th>
+                            <th>Taille</th>
+                            <th>Divers</th>
+                            <th>Spc</th>
+                        </tr>
+                        <tr id="dmd">
+                            <td class="rowname">DMD</td>
+                            <td><input type="text" class="total" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="bba" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="carac mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" class="inverse_taille" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                            <td><input type="text" id="dmd_divers" pattern="[\+]?[0-9]*" /></td>
+                            <td><input type="text" id="dmd_spc" pattern="[\+]?[0-9]*" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cellsheet">
+                    <textarea rows="10"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="f_exploration">
+            <legend>Exploration</legend>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Total</th>
+                    <th>Dex</th>
+                    <th>Spc</th>
+                </tr>
+                <tr id="init">
+                    <td class="rowname">Init</td>
+                    <td><input type="text" class="total" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" class="carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                    <td><input type="text" id="init_spc" pattern="[\+]?[0-9]*" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Enregistrer" />
+    </form>
+</div>

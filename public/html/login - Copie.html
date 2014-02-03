@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sapiens Pandragon">
+        <meta name="keywords" content="jdr, pathfinder">
+        <meta name="description" content="Interface pour JdR">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>JdR - Pathfinder</title>
+        <link rel="icon" type="image/ico" href="/images/icon.ico" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/ui.css" />
+        <link rel="stylesheet" href="css/connection.css" />
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+    <body>
+        <div id="connection">
+            <div id="cotable">
+                <div class="cocell">
+                    <form method="post" action="" id="login" class="content">
+                        <legend>Connexion au serveur</legend>
+                        <p id="errlogin" style="display: none;">Vos identifiants sont erronés</p>
+                        <input type="text" id="pseudologin" placeholder="Pseudo" /><br />
+                        <input type="password" id="passlogin" placeholder="Mot de passe" /><br />
+                        <input type="submit" value="Connexion" />
+                    </form>
+                </div>
+                <div class="cocell">
+                    <form method="post" action="" id="signup" class="content">
+                        <legend>Nouvel utilisateur</legend>
+                        <input type="text" id="pseudosignup" placeholder="Pseudo" /><br />
+                        <input type="password" id="passsignup" placeholder="Mot de passe" /><br />
+                        <input type="password" id="verifsignup" placeholder="Verification" /><br />
+                        <input type="mail" id="mailsignup" placeholder="Email" /><br />
+                        <input type="submit" value="Enregistrer" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/login.js"></script>
+    </body>
+</html>

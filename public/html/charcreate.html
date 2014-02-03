@@ -1,0 +1,637 @@
+        <div id="charcreate">
+            <form method="post" id="charform">
+                <div class="tablesheet">
+                    <div class="cellsheet">
+                        <div id="char_page1" class="char_page content">
+                            <div class="tablesheet">
+                                <div class="cellsheet">
+                                    <fieldset id="races">
+                                        <legend>1. Races</legend>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="demi_elfe" value="demi_elfe" />
+                                            <label for="demi_elfe">Demi-elfe</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="demi_orque" value="demi_orque" />
+                                            <label for="demi_orque">Demi-orque</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="elfe" value="elfe" />
+                                            <label for="elfe">Elfe</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="gnome" value="gnome" />
+                                            <label for="gnome">Gnome</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="halfelin" value="halfelin" />
+                                            <label for="halfelin">Halfelin</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="humain" value="humain" />
+                                            <label for="humain">Humain</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="race" id="nain" value="nain" />
+                                            <label for="nain">Nain</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="cellsheet" style="text-align:center;padding-top:50px;">
+                                    <div id="diceresults" style="height:20px;"></div>
+                                    <div>Total :</div>
+                                    <input type="text" id="dicetotal" disabled="true" />
+                                    <input type="button" id="diceroller" value="Lancer dés" />
+                                    <div id="alldice" style="font-size:.8em"></div>
+                                </div>
+                                <div class="cellsheet">
+                                    <fieldset id="caract">
+                                        <legend>2. Caractéristiques</legend>
+                                        <table>
+                                            <tr>
+                                                <th></th>
+                                                <th>Total</th>
+                                                <th>Mod</th>
+                                                <th>Race</th>
+                                                <th>Dés</th>
+                                            </tr>
+                                            <tr id="for">
+                                                <td>Force</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                            <tr id="dex">
+                                                <td>Dexterité</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                            <tr id="con">
+                                                <td>Constitution</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_con" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                            <tr id="int">
+                                                <td>Intelligence</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                            <tr id="sag">
+                                                <td>Sagesse</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                            <tr id="cha">
+                                                <td>Charisme</td>
+                                                <td><input type="text" class="carac_total" pattern="[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                <td><input type="text" class="modif carac_race" pattern="[\+]?[0-9]*" /></td>
+                                                <td><input type="text" class="modif carac_des" pattern="[0-9]*" /></td>
+                                            </tr>
+                                        </table>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="tablesheet">
+                                <div class="cellsheet">
+                                    <fieldset id="classes">
+                                        <legend>3. Classes</legend>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="barbare" value="barbare" />
+                                            <label for="barbare">Barbare</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="barde" value="barde" />
+                                            <label for="barde">Barde</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="druide" value="druide" />
+                                            <label for="druide">Druide</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="ensorceleur" value="ensorceleur" />
+                                            <label for="ensorceleur">Ensorceleur</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="guerrier" value="guerrier" />
+                                            <label for="guerrier">Guerrier</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="magicien" value="magicien" />
+                                            <label for="magicien">Magicien</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="moine" value="moine" />
+                                            <label for="moine">Moine</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="paladin" value="paladin" />
+                                            <label for="paladin">Paladin</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="pretre" value="pretre" />
+                                            <label for="pretre">Prêtre</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="rodeur" value="rodeur" />
+                                            <label for="rodeur">Rôdeur</label>
+                                        </div>
+                                        <div class="radio_image">
+                                            <input type="radio" name="classe" id="roublard" value="roublard" />
+                                            <label for="roublard">Roublard</label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset id="competences">
+                                        <legend>4. Compétences</legend>
+                                        <span>Points de compétences : <span id="pts_comp"></span></span>
+                                        <div class="tablesheet">
+                                            <div class="cellsheet">
+                                                <table>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Total</th>
+                                                        <th>Carac</th>
+                                                        <th>Rang</th>
+                                                        <th>Modif</th>
+                                                    </tr>
+                                                    <tr id="acrobaties">
+                                                        <td class="rowname">*Acrobaties (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="art_magie">
+                                                        <td class="rowname">Art de la magie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="bluff">
+                                                        <td class="rowname">*Bluff</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_exploration">
+                                                        <td class="rowname">exploration</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_folklore">
+                                                        <td class="rowname">folklore</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_geographie">
+                                                        <td class="rowname">géographie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_histoire">
+                                                        <td class="rowname">histoire</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_ingenierie">
+                                                        <td class="rowname">ingénierie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_mystere">
+                                                        <td class="rowname">mystère</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_nature">
+                                                        <td class="rowname">nature</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_noblesse">
+                                                        <td class="rowname">noblesse</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_plans">
+                                                        <td class="rowname">plans</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr class="connaiss" id="connaiss_religion">
+                                                        <td class="rowname">religion</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="deguisement">
+                                                        <td class="rowname">*Déguisement</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="diplomatie">
+                                                        <td class="rowname">*Diplomatie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="discretion">
+                                                        <td class="rowname">*Discrétion (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <div id="connaissances">CONNAISSANCES</div>
+                                                </table>
+                                            </div>
+                                            <div class="cellsheet">
+                                                <table>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Total</th>
+                                                        <th>Carac</th>
+                                                        <th>Rang</th>
+                                                        <th>Modif</th>
+                                                    </tr>
+                                                    <tr id="dressage">
+                                                        <td class="rowname">Dressage</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="equitation">
+                                                        <td class="rowname">Equitation (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="escalade">
+                                                        <td class="rowname">*Escalade (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="escamotage">
+                                                        <td class="rowname">Escamotage (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="estimation">
+                                                        <td class="rowname">*Estimation</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="evasion">
+                                                        <td class="rowname">*Evasion (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="intimidation">
+                                                        <td class="rowname">*Intimidation</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="linguistique">
+                                                        <td class="rowname">Linguistique</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_int" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="natation">
+                                                        <td class="rowname">*Natation (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_for" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="perception">
+                                                        <td class="rowname">*Perception</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="premiers_secours">
+                                                        <td class="rowname">*Pr.secours</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="psychologie">
+                                                        <td class="rowname">*Psychologie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="sabotage">
+                                                        <td class="rowname">Sabotage (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="survie">
+                                                        <td class="rowname">*Survie</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_sag" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="utilisation_objets_magiques">
+                                                        <td class="rowname">Util.obj.maj</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_cha" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                    <tr id="vol">
+                                                        <td class="rowname">*Vol (-)</td>
+                                                        <td><input type="text" class="comp_total" pattern="[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_carac mod_dex" pattern="[\+]?[0-9]*" disabled="true" /></td>
+                                                        <td><input type="text" class="comp_rang" pattern="[0-9]*" /></td>
+                                                        <td><input type="text" class="comp_modif" pattern="[\+]?[0-9]*" /></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="cellsheet">
+                                    <fieldset id="comp_martiales">
+                                        <legend>5. Comp. Martiales</legend>
+                                        <div class="tablesheet">
+                                            <div class="cellsheet">
+                                                <div class="groupname">Armures</div>
+                                                <label><input type="checkbox" value="armure_legere" />légères</label>
+                                                <label><input type="checkbox" value="armure_inter" />interméd.</label>
+                                                <label><input type="checkbox" value="armure_lourde" />lourdes</label>
+                                                <label><input type="checkbox" value="bouclier" />Boucliers</label>
+                                                <label><input type="checkbox" value="pavois" />Pavois</label>
+                                            </div>
+                                            <div class="cellsheet">
+                                                <div class="groupname">Armes</div>
+                                                <label><input type="checkbox" value="arme_courante" />courantes</label>
+                                                <label><input type="checkbox" value="arme_guerre" />de guerre</label>
+                                                <textarea rows="3" style="width:60px;" id="comp_martiale_supp1"></textarea>
+                                            </div>
+                                        </div>
+                                        <textarea rows="8" style="width:130px;" id="comp_martiale_supp2"></textarea>
+                                    </fieldset>
+                                    <fieldset id="langues">
+                                        <legend>6. Langues</legend>
+                                        <span>Langues supp. : <span id="nb_lang"></span></span>
+                                        <div class="tablesheet">
+                                            <div class="cellsheet">
+                                                <div class="groupname">Races</div>
+                                                <label><input type="checkbox" value="langue_commun" />Commun</label>
+                                                <label><input type="checkbox" value="langue_elfique" />Elfique</label>
+                                                <label><input type="checkbox" value="langue_gnome" />Gnome</label>
+                                                <label><input type="checkbox" value="langue_halfelin" />Halfelin</label>
+                                                <label><input type="checkbox" value="langue_nain" />Nain</label>
+                                                <div class="groupname">Classes</div>
+                                                <label><input type="checkbox" value="langue_druide" />Druide</label>
+                                                <div class="groupname">Monstres</div>
+                                                <label><input type="checkbox" value="langue_dragon" />Dragon</label>
+                                                <label><input type="checkbox" value="langue_geant" />Géant</label>
+                                                <label><input type="checkbox" value="langue_gnoll" />Gnoll</label>
+                                            </div>
+                                            <div class="cellsheet">
+                                                <label><input type="checkbox" value="langue_gobelin" />Gobelin</label>
+                                                <label><input type="checkbox" value="langue_orque" />Orque</label>
+                                                <label><input type="checkbox" value="langue_profondeur" />Profond.</label>
+                                                <label><input type="checkbox" value="langue_sylvestre" />Sylvestre</label>
+                                                <div class="groupname">Extérieurs</div>
+                                                <label><input type="checkbox" value="langue_abyssal" />Abyssal</label>
+                                                <label><input type="checkbox" value="langue_aerien" />Aérien</label>
+                                                <label><input type="checkbox" value="langue_aquatique" />Aquat.</label>
+                                                <label><input type="checkbox" value="langue_celeste" />Céleste</label>
+                                                <label><input type="checkbox" value="langue_igneux" />Igneux</label>
+                                                <label><input type="checkbox" value="langue_infernal" />Infernal</label>
+                                                <label><input type="checkbox" value="langue_terreux" />Terreux</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellsheet">
+                        <div id="char_page2" style="text-align:center;" class="char_page content">
+                            <fieldset id="armes">
+                                <legend>7. Armes</legend>
+                                <div class="tablesheet">
+                                    <div class="cellsheet">
+                                        <table>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <th>Type</th>
+                                                <th>Portée</th>
+                                                <th>Toucher</th>
+                                                <th>Dégats</th>
+                                            </tr>
+                                            <tr id="arme1">
+                                                <td><input type="text" class="arme_nom" /></td>
+                                                <td><input type="text" class="arme_type" /></td>
+                                                <td><input type="text" class="arme_portee" /></td>
+                                                <td><input type="text" class="arme_toucher" /></td>
+                                                <td><input type="text" class="arme_degats" /></td>
+                                            </tr>
+                                            <tr id="arme2">
+                                                <td><input type="text" class="arme_nom" /></td>
+                                                <td><input type="text" class="arme_type" /></td>
+                                                <td><input type="text" class="arme_portee" /></td>
+                                                <td><input type="text" class="arme_toucher" /></td>
+                                                <td><input type="text" class="arme_degats" /></td>
+                                            </tr>
+                                            <tr id="arme3">
+                                                <td><input type="text" class="arme_nom" /></td>
+                                                <td><input type="text" class="arme_type" /></td>
+                                                <td><input type="text" class="arme_portee" /></td>
+                                                <td><input type="text" class="arme_toucher" /></td>
+                                                <td><input type="text" class="arme_degats" /></td>
+                                            </tr>
+                                            <tr id="arme4">
+                                                <td><input type="text" class="arme_nom" /></td>
+                                                <td><input type="text" class="arme_type" /></td>
+                                                <td><input type="text" class="arme_portee" /></td>
+                                                <td><input type="text" class="arme_toucher" /></td>
+                                                <td><input type="text" class="arme_degats" /></td>
+                                            </tr>
+                                        </table>
+                                        <div id="arme5" class="one_arme">
+                                            <span class="arme_infos"></span>
+                                            <span class="arme_select"></span>
+                                            <div class="arme_choice"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cellsheet">
+                                        <textarea rows="7" cols="12"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="tablesheet">
+                                <div class="cellsheet" style="width:50%;">
+                                    <fieldset id="armures">
+                                        <legend>8. Armures</legend>
+                                        <table>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <th>Max Dex</th>
+                                                <th>Penal.</th>
+                                                <th>Ech. Sort</th>
+                                                <th>CA</th>
+                                            </tr>
+                                            <tr id="armure">
+                                                <td><input type="text" class="armure_nom" placeholder="Armure" /></td>
+                                                <td><input type="text" class="armure_max_dex" /></td>
+                                                <td><input type="text" class="armure_penal" /></td>
+                                                <td><input type="text" class="armure_echec_sort" /></td>
+                                                <td><input type="text" class="armure_ca" /></td>
+                                            </tr>
+                                            <tr id="bouclier">
+                                                <td><input type="text" class="armure_nom" placeholder="Bouclier" /></td>
+                                                <td><input type="text" class="armure_max_dex" /></td>
+                                                <td><input type="text" class="armure_penal" /></td>
+                                                <td><input type="text" class="armure_echec_sort" /></td>
+                                                <td><input type="text" class="armure_ca" /></td>
+                                           </tr>
+                                        </table>
+                                    </fieldset>
+                                    <fieldset id="dons">
+                                        <legend>10. Dons</legend>
+                                        <textarea rows="5" cols="27"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="cellsheet">
+                                    <fieldset id="backpack">
+                                        <legend>9. Sac à dos</legend>
+                                        <textarea id="bag1" rows="10" cols="12"></textarea>
+                                        <textarea id="bag2" rows="10" cols="12"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <fieldset id="background">
+                                <legend>11. Background</legend>
+                                <div class="tablesheet" style="text-align:left;">
+                                    <div class="cellsheet">
+                                        <span style="font-size:1em;">{AVATAR}</span>
+                                    </div>
+                                    <div class="cellsheet">
+                                        <div>
+                                            <div class="field" id="namechar">
+                                                <span class="namefield">Nom du personnage</span>
+                                                <input type="text" maxlength="20" />
+                                            </div>
+                                            <div class="field" id="relchar">
+                                                <span class="namefield">Religion</span>
+                                                <input type="text" maxlength="20" />
+                                            </div>
+                                            <div class="field" id="nationchar">
+                                                <span class="namefield">Nation</span>
+                                                <input type="text" maxlength="20" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="field" id="genderchar">
+                                                <span class="namefield">Sexe</span>
+                                                <select>
+                                                    <option value="h" selected>H</option>
+                                                    <option value="f">F</option>
+                                                </select>
+                                            </div>
+                                            <div class="field" id="alignchar">
+                                                <span class="namefield">Align</span>
+                                                <select>
+                                                    <option value="lb" selected>L-B</option>
+                                                    <option value="ln">L-N</option>
+                                                    <option value="lm">L-M</option>
+                                                    <option value="nb">N-B</option>
+                                                    <option value="n">N</option>
+                                                    <option value="nm">N-M</option>
+                                                    <option value="cb">C-B</option>
+                                                    <option value="cn">C-N</option>
+                                                    <option value="cm">C-M</option>
+                                                </select>
+                                            </div>
+                                            <div class="field" id="agechar">
+                                                <span class="namefield">Age</span>
+                                                <input type="text" maxlength="3" />
+                                            </div>
+                                            <div class="field" id="weightchar">
+                                                <span class="namefield">Poids</span>
+                                                <input type="text" maxlength="4" />
+                                            </div>
+                                            <div class="field" id="sizechar">
+                                                <span class="namefield">Taille(cm)</span>
+                                                <input type="text" maxlength="4" />
+                                            </div>
+                                            <div class="field" id="eyeschar">
+                                                <span class="namefield">Yeux</span>
+                                                <input type="text" maxlength="10" />
+                                            </div>
+                                            <div class="field" id="hairchar">
+                                                <span class="namefield">Cheveux</span>
+                                                <input type="text" maxlength="10" />
+                                            </div>
+                                            <div class="field" id="skinchar">
+                                                <span class="namefield">Peau</span>
+                                                <input type="text" maxlength="10" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <input type="submit" value="Enregistrer" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>

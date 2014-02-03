@@ -1,0 +1,91 @@
+#charsheet {
+	height: inherit;
+	width: inherit;
+}
+#charsheet .tablesheet {
+	display: table;
+	width: 100%;
+}
+#charsheet .cellsheet {
+	display: table-cell;
+	vertical-align: top;
+}
+#charsheet fieldset {
+	display: inline-block;
+	vertical-align: top;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-before: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+	-webkit-padding-after: 0;
+}
+#charsheet .field {
+	display: inline-block;
+	font-size: 0;
+	margin-right: 8px;
+	margin-bottom: 2px;
+}
+#charsheet .namefield {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 11px;
+	border: 1px solid grey;
+	border-bottom: none;
+	border-radius: 0 20px 0 0 / 0 15px 0 0;
+	background: rgba(175, 175, 175, .5);
+	font-size: 11px;
+}
+#charsheet .field input, #charsheet .field select {
+	margin: 0;
+	width: 100%;
+	height: 18px;
+	border: none;
+	background: rgba(255, 255, 255, .6);
+	border: 1px solid grey;
+	border-top: none;
+	font-size: 13px;
+	padding: 0;
+}
+#charsheet table {width: 100%;}
+#charsheet table th {
+	font-weight: normal;
+	font-size: .7em;
+}
+#charsheet table td.rowname {
+	font-size: .8em;
+	font-weight: bold;
+}
+#charsheet table td.little {
+	font-size: .7em;
+	font-weight: normal;
+}
+#charsheet table input {
+	width: 22px;
+	height: 15px;
+	text-align: center;
+}
+#charsheet table tr.hp input {width: 95%;}
+#charsheet table.combat input.bonus {width: 85px;}
+#charsheet fieldset textarea {
+	display: block;
+	width: 90%;
+	margin: auto;
+	resize: none;
+}
+#levelchar {width: 45px;}
+#agechar {width: 30px;}
+#weightchar {width: 40px;}
+#sizechar {width: 50px;}
+#categ_sizechar {width: 40px;}
+#eyeschar {width: 65px;}
+#hairchar {width: 70px;}
+#skinchar {width: 55px;}
+#f_caractchar {width: 33%;}
+#f_resistchar {width: 38%;}
+#f_hpchar {width: 24%;}
+#f_combat {width: 72%;}
+#f_exploration {width: 25%;}
