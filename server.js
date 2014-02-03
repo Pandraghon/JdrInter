@@ -109,7 +109,7 @@ io.sockets.on('connection', function(socket){
 											name 	: val.name_char,
 											level 	: val.level_char
 										};
-									};
+									}
 									socket.emit('CHOICE_SENDCHARS', chars);
 									callback(null, chars);
 								});
