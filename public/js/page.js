@@ -20,7 +20,7 @@ $(function(){
 
     socket.on('PAGE_CREATECHAR', function() {
         $('#pagecontainer').load('/html/charcreate.html');
-        $.getScript('/js/class.js');
+        //$.getScript('/js/class.js');
         $.getScript('/js/charcreate.js');
     });
 });

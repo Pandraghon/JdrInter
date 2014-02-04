@@ -135,12 +135,26 @@
 	width: 641px;
 	margin-top: 23px;
 	margin-left: -545px;
-	text-align: right;
-	overflow-y: auto; 
 	border: 1px solid grey;
 	border-radius: 4px;
 	background: rgba(240, 240, 240, .8);
 	z-index: 333;
+}
+#charcreate .arme_choice .arme_header {
+	width: 100%;
+	height: 25px;
+	background: rgba(180, 180, 180, .7);
+	text-align: left;
+}
+.arme_header span {
+	display: inline-block;
+	text-align: center;
+}
+#charcreate .arme_all_choice {
+	width: 100%;
+	height: 225px;
+	text-align: right;
+	overflow-y: auto; 
 }
 #charcreate .arme_one_choice {
 	width: 100%;
@@ -158,12 +172,12 @@
 #charcreate .arme_one_choice span:last-child {
 	border: none;
 }
-#charcreate .arme_nom {width:180px;}
+#charcreate .arme_nom {width:200px;}
 #charcreate .arme_prix {width:43px;}
-#charcreate .arme_degats_p,
-#charcreate .arme_degats_m {width:43px;}
+#charcreate .arme_degats {width:43px;}
+#charcreate .arme_all_degats {width:112px;}
 #charcreate .arme_critique {width:69px;}
-#charcreate .arme_fact_portee {width:27px;}
+#charcreate .arme_fact_portee {width:50px;}
 #charcreate .arme_poids {width:45px;}
 #charcreate .arme_type {width:54px;}
 #charcreate .arme_special {width:120px;}

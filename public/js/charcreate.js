@@ -1,16 +1,4 @@
 $(function(){
-
-    function conversionPO(value){
-        value = value != null ? parseInt(value, 10) : 0;
-        if(value >= 100){
-            value = (value / 100)+'po';
-        }else if(value >= 10{
-            value = (value / 10)+'pa';
-        }else{
-            value += 'pc';
-        }
-        return value;
-    };
     
     var socket = io.connect('25.185.224.141:8080');
     var arrayWeapon;
@@ -18,22 +6,22 @@ $(function(){
     socket.emit('SERVER_GETWEAPONS');
     socket.on('CHARCREATE_SETWEAPONS', function(array){
         arrayWeapon = array;
-        socket.emit('debug', arrayWeapon['1'].nom);
         for(var armeID in arrayWeapon){
             var weapon = arrayWeapon[armeID];
             var prix = conversionPO(weapon.prix);
+            var masse = conversionKG(weapon.poids);
             var line = '<div id="arme'+armeID+'" class="arme_one_choice">'+
                        '<span class="arme_nom">'+weapon.nom+'</span>'+
                        '<span class="arme_prix">'+prix+'</span>'+
-                       '<span class="arme_degats taille_p">'+weapon.degats_p+'</span>'+
+                       '<span class="arme_degats taille_p" style="display:none;">'+weapon.degats_p+'</span>'+
                        '<span class="arme_degats taille_m">'+weapon.degats_m+'</span>'+
                        '<span class="arme_critique">'+weapon.critique+'</span>'+
                        '<span class="arme_fact_portee">'+weapon.fact_portee+'</span>'+
-                       '<span class="arme_poids">'+weapon.poids+'</span>'+
+                       '<span class="arme_poids">'+masse+'</span>'+
                        '<span class="arme_type">'+weapon.type+'</span>'+
                        '<span class="arme_special">'+weapon.special+'</span>'+
                        '</div>';
-            $('.arme_choice').append(line);
+            $('.arme_all_choice').append(line);
         }
     });
     
@@ -92,6 +80,7 @@ $(function(){
 
     $('input[name="race"]').on('change', function() {
         var race = $('input[name="race"]:checked').val();
+        var typeTaille = 'M';
         if(race == 'demi_elfe' || race == 'demi_orque' || race == 'humain') { //+2 a une caract
             $('#caract .carac_race').prop('disabled', false)
                                     .val('').change()
@@ -110,6 +99,7 @@ $(function(){
             $('#con .carac_race').val('+2').change();
             $('#cha .carac_race').val('+2').change();
             $('#for .carac_race').val('-2').change();
+            typeTaille = 'P';
         } else if(race == 'halfelin') { //+2dex/cha, -2for
             $('#caract .carac_race').prop('disabled', true)
                                     .val('').change()
@@ -117,6 +107,7 @@ $(function(){
             $('#dex .carac_race').val('+2').change();
             $('#cha .carac_race').val('+2').change();
             $('#for .carac_race').val('-2').change();
+            typeTaille = 'P';
         } else if(race == 'nain') { //+2con/sag, -2cha
             $('#caract .carac_race').prop('disabled', true)
                                     .val('').change()
@@ -124,6 +115,14 @@ $(function(){
             $('#con .carac_race').val('+2').change();
             $('#sag .carac_race').val('+2').change();
             $('#cha .carac_race').val('-2').change();
+        }
+
+        if(typeTaille == 'P'){
+            $('.taille_p').css('display', 'inline-block');
+            $('.taille_m').css('display', 'none');
+        }else{
+            $('.taille_m').css('display', 'inline-block');
+            $('.taille_p').css('display', 'none');
         }
 
         var classe = $('input[name="classe"]:checked').val() ? $('input[name="classe"]:checked').val() : '',
@@ -164,7 +163,6 @@ $(function(){
 
     $('.arme_select').on('click', function(){
         var armeID = $(this).parent().prop('id');
-        socket.emit('debug', armeID);
         var choice = $(this).parent().find('.arme_choice');
         choice.css('display', choice.css('display') == 'none' ? 'inline-block' : 'none');
     });
@@ -325,5 +323,27 @@ $(function(){
             $('#pts_comp').empty().append(ptcomp > 0 ? ptcomp : '0');
         }
     };
+
+    function conversionPO(value){
+        value = value != null ? parseInt(value, 10) : 0;
+        if(value >= 100){
+            value = (value / 100)+'po';
+        }else if(value >= 10){
+            value = (value / 10)+'pa';
+        }else{
+            value += 'pc';
+        }
+        return value;
+    };
+
+    function conversionKG(value){
+        value = value != null ? parseInt(value, 10) : 0;
+        if(value >= 1000){
+            value = (value / 1000)+'kg';
+        }else{
+            value += 'g';
+        }
+        return value;
+    }
 
 });
