@@ -1,26 +1,53 @@
 $(function(){
     
     var socket = io.connect('25.185.224.141:8080');
-    var arrayWeapon;
+    var arrayWeapon = {};
 
     socket.emit('SERVER_GETWEAPONS');
     socket.on('CHARCREATE_SETWEAPONS', function(array){
         arrayWeapon = array;
-        for(var armeID in arrayWeapon){
-            var weapon = arrayWeapon[armeID];
-            var prix = conversionPO(weapon.prix);
-            var masse = conversionKG(weapon.poids);
-            var line = '<div id="arme'+armeID+'" class="arme_one_choice">'+
-                       '<span class="arme_nom">'+weapon.nom+'</span>'+
-                       '<span class="arme_prix">'+prix+'</span>'+
-                       '<span class="arme_degats taille_p" style="display:none;">'+weapon.degats_p+'</span>'+
-                       '<span class="arme_degats taille_m">'+weapon.degats_m+'</span>'+
-                       '<span class="arme_critique">'+weapon.critique+'</span>'+
-                       '<span class="arme_fact_portee">'+weapon.fact_portee+'</span>'+
-                       '<span class="arme_poids">'+masse+'</span>'+
-                       '<span class="arme_type">'+weapon.type+'</span>'+
-                       '<span class="arme_special">'+weapon.special+'</span>'+
-                       '</div>';
+        var categ = '',
+            sous_categ = '';
+        for(var key in arrayWeapon){
+            var weapon = arrayWeapon[key];
+            if(weapon == null){
+                var line = '<div id="0" class="arme_one_choice">'+
+                           '<span class="arme_nom">(Vide)</span>'+
+                           '<span class="arme_prix"></span>'+
+                           '<span class="arme_degats taille_p" style="display:none;"></span>'+
+                           '<span class="arme_degats taille_m"></span>'+
+                           '<span class="arme_critique"></span>'+
+                           '<span class="arme_fact_portee"></span>'+
+                           '<span class="arme_poids"></span>'+
+                           '<span class="arme_type"></span>'+
+                           '<span class="arme_special"></span>'+
+                           '</div>';
+            }else{
+                var prix = conversionPO(weapon.prix),
+                    masse = conversionKG(weapon.poids);
+
+                if(categ != weapon.categ){
+                    categ = weapon.categ;
+                    sous_categ = weapon.sous_categ;
+                    $('.arme_all_choice').append('<div class="arme_categ">'+conversionCateg(categ)+'</div>'+
+                                                '<div class="arme_sous_categ">'+conversionCateg(sous_categ)+'</div>');
+                }else if(sous_categ != weapon.sous_categ){
+                    sous_categ = weapon.sous_categ;
+                    $('.arme_all_choice').append('<div class="arme_sous_categ">'+conversionCateg(sous_categ)+'</div>');
+                }
+
+                var line = '<div id="'+weapon.id+'" class="arme_one_choice">'+
+                           '<span class="arme_nom">'+weapon.nom+'</span>'+
+                           '<span class="arme_prix">'+prix+'</span>'+
+                           '<span class="arme_degats taille_p" style="display:none;">'+weapon.degats_p+'</span>'+
+                           '<span class="arme_degats taille_m">'+weapon.degats_m+'</span>'+
+                           '<span class="arme_critique">'+weapon.critique+'</span>'+
+                           '<span class="arme_fact_portee">'+weapon.fact_portee+'</span>'+
+                           '<span class="arme_poids">'+masse+'</span>'+
+                           '<span class="arme_type">'+weapon.type+'</span>'+
+                           '<span class="arme_special">'+weapon.special+'</span>'+
+                           '</div>';
+            }
             $('.arme_all_choice').append(line);
         }
     });
@@ -163,8 +190,26 @@ $(function(){
 
     $('.arme_select').on('click', function(){
         var armeID = $(this).parent().prop('id');
-        var choice = $(this).parent().find('.arme_choice');
-        choice.css('display', choice.css('display') == 'none' ? 'inline-block' : 'none');
+        var choice = $(this).parent().find('.arme_choice'),
+            display = choice.css('display') == 'none' ? 'inline-block' : 'none';
+        $('.arme_choice').css('display', 'none');
+        choice.css('display', display);
+    });
+    $(document).on('click', '.arme_one_choice', function(){
+        var currentWeapon = arrayWeapon[$(this).prop('id')],
+            armeSelector = $(this).parent().parent().parent(),
+            armeInfos = armeSelector.find('.arme_infos');
+        if(currentWeapon == null){
+            var nom = '',
+                dgts = '',
+                crit = '';
+        }else{
+            var nom = currentWeapon.nom,
+                dgts = $('.taille_m').css('display') == 'inline-block' ? currentWeapon.degats_m : currentWeapon.degats_p,
+                crit = currentWeapon.critique;
+        }
+        socket.emit('debug', 'arme : '+nom);
+        armeInfos.text(nom+' '+dgts+' '+crit);
     });
     
 
@@ -344,6 +389,27 @@ $(function(){
             value += 'g';
         }
         return value;
+    }
+
+    function conversionCateg(name){
+        if(name == "arme_courante")
+            return "Armes courantes";
+        else if(name == "arme_guerre")
+            return "Armes de guerre";
+        else if(name == "arme_exotique")
+            return "Armes exotiques";
+        else if(name == "mains_nues")
+            return "Combat à mains nues";
+        else if(name == "cac_legere")
+            return "Armes de corps à corps légères";
+        else if(name == "cac_1m")
+            return "Armes de corps à corps à une main";
+        else if(name == "cac_2m")
+            return "Armes de corps à corps à deux mains";
+        else if(name == "distance")
+            return "Armes à distance";
+        else
+            return "Error name";
     }
 
 });

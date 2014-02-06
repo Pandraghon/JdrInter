@@ -15,7 +15,7 @@ shasum.update("utf8");
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res){
-  	res.sendfile(__dirname + '/public/html/page.html');
+    res.sendfile(__dirname + '/public/html/page.html');
 });
 
 var users = {};
@@ -44,7 +44,8 @@ connection.query('SELECT * FROM weapons', function(err, results){
 	else {
 		for(var key in results){
 			var weapon = results[key];
-			arrayWeapon[key] = {
+			arrayWeapon[weapon.id_weapon] = {
+				id			: weapon.id_weapon,
 				nom			: weapon.nom,
 				prix		: weapon.prix,
 				degats_p	: weapon.degats_p,
@@ -102,12 +103,12 @@ io.sockets.on('connection', function(socket){
 							two: function(callback){
 								connection.query('SELECT * FROM chars WHERE id_user = ?', [current.me.userid], function(err, rows, cols) {
 									if(err) throw err;
-									chars = {};
+									var chars = {};
 									for(var key in rows) {
-										val = rows[key];
+										var val = rows[key];
 										chars[val.id_char] = {
-											name 	: val.name_char,
-											level 	: val.level_char
+											name    : val.name_char,
+											level   : val.level_char
 										};
 									}
 									socket.emit('CHOICE_SENDCHARS', chars);
@@ -157,8 +158,8 @@ io.sockets.on('connection', function(socket){
 							connection.query('INSERT INTO users (name_user, mail_user, pwd_user) VALUES ("'+data.pseudo+'", "'+data.mail+'", "'+hash+'")', function(err, rows, cols) {
 								if(err) throw err;
 								else socket.emit('signed', {
-									pseudo 	: data.pseudo,
-									pass 	: data.pass
+									pseudo  : data.pseudo,
+									pass    : data.pass
 								});
 								//connection.end();
 							});
@@ -184,16 +185,16 @@ io.sockets.on('connection', function(socket){
 			if(err) throw err;
 			console.log('Message sent to BdD');
 			socket.broadcast.emit('CHAT_MESSAGEIN', {
-				author 	: current.me,
+				author  : current.me,
 				message : data,
-				time 	: datetime
+				time    : datetime
 			});
 		});
 	});
 
 	socket.on('getchars', function() {
 		socket.emit('givechars', current.chars);
-	})
+	});
 
 	socket.on('CLIENT_CREATECHAR', function() {
 		socket.emit('PAGE_CREATECHAR');
@@ -256,7 +257,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO caracs VALUES (NULL, ?, ?, ?, ?, ?, ?)', [data.carac.for, data.carac.dex, data.carac.con, data.carac.int, data.carac.sag, data.carac.cha], function(err, result) {
 						if(err) throw err;
 						else {
-							caracID = result.insertId;
+							var caracID = result.insertId;
 							console.log('CaractOK : '+caracID);
 							callback(null, caracID);
 						}
@@ -266,7 +267,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO comps VALUES (NULL'+querySQL1+')', function(err, result) {
 						if(err) throw err;
 						else {
-							comp_rangID = result.insertId;
+							var comp_rangID = result.insertId;
 							console.log('Comp_rangOK : '+comp_rangID);
 							callback(null, comp_rangID);
 						}
@@ -276,7 +277,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO comps VALUES (NULL'+querySQL2+')', function(err, result) {
 						if(err) throw err;
 						else {
-							comp_modifID = result.insertId;
+							var comp_modifID = result.insertId;
 							console.log('Comp_modifOK : '+comp_modifID);
 							callback(null, comp_modifID);
 						}
@@ -286,7 +287,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO comp_martiales VALUES (NULL'+querySQL3+')', function(err, result) {
 						if(err) throw err;
 						else {
-							comp_martialesID = result.insertId;
+							var comp_martialesID = result.insertId;
 							console.log('Comp_martialesOK : '+comp_martialesID);
 							callback(null, comp_martialesID);
 						}
@@ -296,7 +297,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO langues VALUES (NULL'+querySQL4+')', function(err, result) {
 						if(err) throw err;
 						else {
-							languesID = result.insertId;
+							var languesID = result.insertId;
 							console.log('LanguesOK : '+languesID);
 							callback(null, languesID);
 						}
@@ -306,7 +307,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armes VALUES (NULL'+querySQL5+')', function(err, result) {
 						if(err) throw err;
 						else {
-							arme1ID = result.insertId;
+							var arme1ID = result.insertId;
 							console.log('Arme1OK : '+arme1ID);
 							callback(null, arme1ID);
 						}
@@ -316,7 +317,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armes VALUES (NULL'+querySQL6+')', function(err, result) {
 						if(err) throw err;
 						else {
-							arme2ID = result.insertId;
+							var arme2ID = result.insertId;
 							console.log('Arme2OK : '+arme2ID);
 							callback(null, arme2ID);
 						}
@@ -326,7 +327,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armes VALUES (NULL'+querySQL7+')', function(err, result) {
 						if(err) throw err;
 						else {
-							arme3ID = result.insertId;
+							var arme3ID = result.insertId;
 							console.log('Arme3OK : '+arme3ID);
 							callback(null, arme3ID);
 						}
@@ -336,7 +337,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armes VALUES (NULL'+querySQL8+')', function(err, result) {
 						if(err) throw err;
 						else {
-							arme4ID = result.insertId;
+							var arme4ID = result.insertId;
 							console.log('Arme4OK : '+arme4ID);
 							callback(null, arme4ID);
 						}
@@ -346,7 +347,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armes VALUES (NULL'+querySQL9+')', function(err, result) {
 						if(err) throw err;
 						else {
-							arme5ID = result.insertId;
+							var arme5ID = result.insertId;
 							console.log('Arme5OK : '+arme5ID);
 							callback(null, arme5ID);
 						}
@@ -356,7 +357,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armures VALUES (NULL'+querySQL10+')', function(err, result) {
 						if(err) throw err;
 						else {
-							armureID = result.insertId;
+							var armureID = result.insertId;
 							console.log('ArmureOK : '+armureID);
 							callback(null, armureID);
 						}
@@ -366,7 +367,7 @@ io.sockets.on('connection', function(socket){
 					connection.query('INSERT INTO armures VALUES (NULL'+querySQL11+')', function(err, result) {
 						if(err) throw err;
 						else {
-							bouclierID = result.insertId;
+							var bouclierID = result.insertId;
 							console.log('BouclierOK : '+bouclierID);
 							callback(null, bouclierID);
 						}

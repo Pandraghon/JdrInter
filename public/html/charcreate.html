@@ -469,29 +469,42 @@
                                 <legend>7. Armes</legend>
                                 <div class="tablesheet">
                                     <div class="cellsheet">
-                                        <table>
-                                            <tr>
-                                                <th>Nom</th>
-                                                <th>Type</th>
-                                                <th>Portée</th>
-                                                <th>Toucher</th>
-                                                <th>Dégats</th>
-                                            </tr>
-                                            <tr id="arme1">
-                                                <td><input type="text" class="arme_nom" /></td>
-                                                <td><input type="text" class="arme_type" /></td>
-                                                <td><input type="text" class="arme_portee" /></td>
-                                                <td><input type="text" class="arme_toucher" /></td>
-                                                <td><input type="text" class="arme_degats" /></td>
-                                            </tr>
-                                            <tr id="arme2">
-                                                <td><input type="text" class="arme_nom" /></td>
-                                                <td><input type="text" class="arme_type" /></td>
-                                                <td><input type="text" class="arme_portee" /></td>
-                                                <td><input type="text" class="arme_toucher" /></td>
-                                                <td><input type="text" class="arme_degats" /></td>
-                                            </tr>
-                                        </table>
+                                        <div id="arme1" class="one_arme">
+                                            <span class="arme_infos"></span>
+                                            <span class="arme_select"></span>
+                                            <div class="arme_choice">
+                                                <div class="arme_header">
+                                                    <span class="arme_nom">Nom</span><!--
+                                                    --><span class="arme_prix">Prix</span><!--
+                                                    --><span class="arme_all_degats">Dégats</span><!--
+                                                    --><span class="arme_fact_portee">Portée</span><!--
+                                                    --><span class="arme_poids">Masse</span><!--
+                                                    --><span class="arme_type">Type</span><!--
+                                                    --><span class="arme_special">Spécial</span>
+                                                </div>
+                                                <div class="arme_all_choice">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="arme2" class="one_arme">
+                                            <span class="arme_infos"></span>
+                                            <span class="arme_select"></span>
+                                            <div class="arme_choice">
+                                                <div class="arme_header">
+                                                    <span class="arme_nom">Nom</span><!--
+                                                    --><span class="arme_prix">Prix</span><!--
+                                                    --><span class="arme_all_degats">Dégats</span><!--
+                                                    --><span class="arme_fact_portee">Portée</span><!--
+                                                    --><span class="arme_poids">Masse</span><!--
+                                                    --><span class="arme_type">Type</span><!--
+                                                    --><span class="arme_special">Spécial</span>
+                                                </div>
+                                                <div class="arme_all_choice">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div id="arme3" class="one_arme">
                                             <span class="arme_infos"></span>
                                             <span class="arme_select"></span>
@@ -513,12 +526,38 @@
                                         <div id="arme4" class="one_arme">
                                             <span class="arme_infos"></span>
                                             <span class="arme_select"></span>
-                                            <div class="arme_choice"></div>
+                                            <div class="arme_choice">
+                                                <div class="arme_header">
+                                                    <span class="arme_nom">Nom</span><!--
+                                                    --><span class="arme_prix">Prix</span><!--
+                                                    --><span class="arme_all_degats">Dégats</span><!--
+                                                    --><span class="arme_fact_portee">Portée</span><!--
+                                                    --><span class="arme_poids">Masse</span><!--
+                                                    --><span class="arme_type">Type</span><!--
+                                                    --><span class="arme_special">Spécial</span>
+                                                </div>
+                                                <div class="arme_all_choice">
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                         <div id="arme5" class="one_arme">
                                             <span class="arme_infos"></span>
                                             <span class="arme_select"></span>
-                                            <div class="arme_choice"></div>
+                                            <div class="arme_choice">
+                                                <div class="arme_header">
+                                                    <span class="arme_nom">Nom</span><!--
+                                                    --><span class="arme_prix">Prix</span><!--
+                                                    --><span class="arme_all_degats">Dégats</span><!--
+                                                    --><span class="arme_fact_portee">Portée</span><!--
+                                                    --><span class="arme_poids">Masse</span><!--
+                                                    --><span class="arme_type">Type</span><!--
+                                                    --><span class="arme_special">Spécial</span>
+                                                </div>
+                                                <div class="arme_all_choice">
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="cellsheet">
@@ -638,7 +677,7 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            <input type="submit" value="Enregistrer" />
+                            <input type="submit" value="Enregistrer" disabled />
                         </div>
                     </div>
                 </div>

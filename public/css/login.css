@@ -159,6 +159,7 @@
 #charcreate .arme_one_choice {
 	width: 100%;
 	border-bottom: 1px solid grey;
+	cursor: pointer;
 }
 #charcreate .arme_one_choice:hover {
 	background: rgba(200, 200, 200, .5);
@@ -171,6 +172,20 @@
 }
 #charcreate .arme_one_choice span:last-child {
 	border: none;
+}
+.arme_categ {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	background: rgba(190, 190, 190, .7);
+}
+.arme_sous_categ {
+	text-align: left;
+	font-size: 1.2em;
+	padding-left: 25px;
+	background: rgba(195, 195, 195, .7);
+	border-bottom: 1px solid grey;
 }
 #charcreate .arme_nom {width:200px;}
 #charcreate .arme_prix {width:43px;}
