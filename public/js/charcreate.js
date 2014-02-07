@@ -62,8 +62,8 @@ $(function(){
 
 
     var rolled_dice = 0;
-    $('#diceroller').on('click', function() {
-        if(rolled_dice >= 6) return false;
+    $('#diceroller').on('click', function(){
+        if(rolled_dice >= 6) return;
         rolled_dice++;
         var num = 0,
             dice,
@@ -202,13 +202,16 @@ $(function(){
         if(currentWeapon == null){
             var nom = '',
                 dgts = '',
-                crit = '';
+                crit = '',
+                ID = '';
         }else{
             var nom = currentWeapon.nom,
                 dgts = $('.taille_m').css('display') == 'inline-block' ? currentWeapon.degats_m : currentWeapon.degats_p,
-                crit = currentWeapon.critique;
+                crit = currentWeapon.critique,
+                ID = currentWeapon.id;
         }
-        socket.emit('debug', 'arme : '+nom);
+        socket.emit('debug', 'arme : '+ID+' '+nom);
+        armeInfos.prop('id', ID);
         armeInfos.text(nom+' '+dgts+' '+crit);
     });
     
@@ -307,11 +310,12 @@ $(function(){
             langues[$(this).prop('value')] = $(this).prop('checked');
         });
         //armes
-        var numarme;
-        $('#armes input').each(function() {
-            numarme = $(this).parent('td').parent('tr').prop('id');
-            if(!armes[numarme]) armes[numarme] = {};
-            armes[numarme][$(this).prop('class')] = $(this).val();
+        var numarme, idarme;
+        $('#armes .arme_infos').each(function() {
+            numarme = $(this).parent().prop('id'),
+            idarme = $(this).prop('id');
+            if(idarme == '') idarme = 'NULL';
+            armes[numarme] = idarme;
         });
         armes['infos_sup'] = $('#armes textarea').val();
         //armures
@@ -328,8 +332,6 @@ $(function(){
             errors = true;
             typeError += '\n-Background';
         } else background.nom = $('#namechar input').val();
-
-        socket.emit('debug', comp_rang['acrobaties']);
 
         if(!errors) {
             socket.emit('NEW_CHAR', {

@@ -1,7 +1,7 @@
 var express = require('express'),
-	app = express(),
-	mysql = require('mysql'),
-	crypto = require('crypto'),
+    app = express(),
+    mysql = require('mysql'),
+    crypto = require('crypto'),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server).set('log level', 2),
     ent = require('ent'), // Permet de bloquer les caractères HTML (sécurité équivalente à htmlentities en PHP)
@@ -45,8 +45,8 @@ connection.query('SELECT * FROM weapons', function(err, results){
 		for(var key in results){
 			var weapon = results[key];
 			arrayWeapon[weapon.id_weapon] = {
-				id			: weapon.id_weapon,
-				nom			: weapon.nom,
+				id		: weapon.id_weapon,
+				nom		: weapon.nom,
 				prix		: weapon.prix,
 				degats_p	: weapon.degats_p,
 				degats_m	: weapon.degats_m,
@@ -172,7 +172,7 @@ io.sockets.on('connection', function(socket){
 
 	socket.on('disconnect', function(){
 		if(!current.me){
-			return false;
+			return;
 		}
 		delete users[current.me.userid];
 		io.sockets.emit('CHAT_LOGOUT', current.me);
@@ -303,56 +303,6 @@ io.sockets.on('connection', function(socket){
 						}
 					});
 				},
-				arme1ID: function(callback){
-					connection.query('INSERT INTO armes VALUES (NULL'+querySQL5+')', function(err, result) {
-						if(err) throw err;
-						else {
-							var arme1ID = result.insertId;
-							console.log('Arme1OK : '+arme1ID);
-							callback(null, arme1ID);
-						}
-					});
-				},
-				arme2ID: function(callback){
-					connection.query('INSERT INTO armes VALUES (NULL'+querySQL6+')', function(err, result) {
-						if(err) throw err;
-						else {
-							var arme2ID = result.insertId;
-							console.log('Arme2OK : '+arme2ID);
-							callback(null, arme2ID);
-						}
-					});
-				},
-				arme3ID: function(callback){
-					connection.query('INSERT INTO armes VALUES (NULL'+querySQL7+')', function(err, result) {
-						if(err) throw err;
-						else {
-							var arme3ID = result.insertId;
-							console.log('Arme3OK : '+arme3ID);
-							callback(null, arme3ID);
-						}
-					});
-				},
-				arme4ID: function(callback){
-					connection.query('INSERT INTO armes VALUES (NULL'+querySQL8+')', function(err, result) {
-						if(err) throw err;
-						else {
-							var arme4ID = result.insertId;
-							console.log('Arme4OK : '+arme4ID);
-							callback(null, arme4ID);
-						}
-					}); 
-				},
-				arme5ID: function(callback){
-					connection.query('INSERT INTO armes VALUES (NULL'+querySQL9+')', function(err, result) {
-						if(err) throw err;
-						else {
-							var arme5ID = result.insertId;
-							console.log('Arme5OK : '+arme5ID);
-							callback(null, arme5ID);
-						}
-					});
-				},
 				armureID: function(callback){
 					connection.query('INSERT INTO armures VALUES (NULL'+querySQL10+')', function(err, result) {
 						if(err) throw err;
@@ -381,7 +331,7 @@ io.sockets.on('connection', function(socket){
 					querySQL += ', '+connection.escape(data.background[key]);
 				}
 				console.log(results.caracID);
-				querySQL += ', '+results.caracID+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+connection.escape(arrayClass[data.background.classe].hpbase + (data.carac.con - 10) / 2)+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+connection.escape(data.armures.armure.ca)+', '+connection.escape(data.armures.bouclier.ca)+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+results.comp_rangID+', '+results.comp_modifID+', '+results.comp_martialesID+', '+results.languesID+', '+results.arme1ID+', '+results.arme2ID+', '+results.arme3ID+', '+results.arme4ID+', '+results.arme5ID+', '+connection.escape(data.armes.infos_sup)+', '+results.armureID+', '+results.bouclierID+', '+connection.escape(data.sac1)+', '+connection.escape(data.sac2)+', '+connection.escape(data.dons);
+				querySQL += ', '+results.caracID+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+connection.escape(arrayClass[data.background.classe].hpbase + (data.carac.con - 10) / 2)+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+connection.escape(data.armures.armure.ca)+', '+connection.escape(data.armures.bouclier.ca)+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '+results.comp_rangID+', '+results.comp_modifID+', '+results.comp_martialesID+', '+results.languesID+', '+data.armes.arme1+', '+data.armes.arme2+', '+data.armes.arme3+', '+data.armes.arme4+', '+data.armes.arme5+', '+connection.escape(data.armes.infos_sup)+', '+results.armureID+', '+results.bouclierID+', '+connection.escape(data.sac1)+', '+connection.escape(data.sac2)+', '+connection.escape(data.dons);
 				console.log(querySQL);
 				var backgroundID;
 				connection.query('INSERT INTO chars VALUES (NULL'+querySQL+')', function(err, result) {
