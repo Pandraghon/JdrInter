@@ -213,6 +213,7 @@ $(function(){
         socket.emit('debug', 'arme : '+ID+' '+nom);
         armeInfos.prop('id', ID);
         armeInfos.text(nom+' '+dgts+' '+crit);
+        armeSelector.find('.arme_choice').css('display', 'none');
     });
     
 

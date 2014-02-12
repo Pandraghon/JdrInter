@@ -239,14 +239,6 @@ io.sockets.on('connection', function(socket){
 		for(var key in data.langues) {
 			querySQL4 += ', '+connection.escape(data.langues[key]);
 		}
-		var querySQL5 = '', querySQL6 = '', querySQL7 = '', querySQL8 = '', querySQL9 = '';
-		for(var key in data.armes.arme1) {
-			querySQL5 += ', '+connection.escape(data.armes.arme1[key]);
-			querySQL6 += ', '+connection.escape(data.armes.arme2[key]);
-			querySQL7 += ', '+connection.escape(data.armes.arme3[key]);
-			querySQL8 += ', '+connection.escape(data.armes.arme4[key]);
-			querySQL9 += ', '+connection.escape(data.armes.arme5[key]);
-		}
 		var querySQL10 = '', querySQL11 = '';
 		for(var key in data.armures.armure) {
 			querySQL10 += ', '+connection.escape(data.armures.armure[key]);
