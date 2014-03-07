@@ -35,7 +35,7 @@ var map = {
 var connection = mysql.createConnection({
 	host	: 'mysql1.alwaysdata.com',
 	user	: 'jdrinter',
-	password: '*Jdrinter1994',
+	password: '**********',
 	database: 'jdrinter_web'
 });
 
